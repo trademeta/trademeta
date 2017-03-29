@@ -1,0 +1,247 @@
+@font-face {
+    font-family: 'Locator-Black';
+    src: url("/fonts/Locator-Black.eot?#iefix") format("embedded-opentype"), url("/fonts/Locator-Black.otf") format("opentype"), url("/fonts/Locator-Black.woff") format("woff"), url("/fonts/Locator-Black.ttf") format("truetype"), url("/fonts/Locator-Black.svg#Locator-Black") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Locator-Bold';
+    src: url("/fonts/Locator-Bold.eot?#iefix") format("embedded-opentype"), url("/fonts/Locator-Bold.otf") format("opentype"), url("/fonts/Locator-Bold.woff") format("woff"), url("/fonts/Locator-Bold.ttf") format("truetype"), url("/fonts/Locator-Bold.svg#Locator-Bold") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Locator-Light';
+    src: url("/fonts/Locator-Light.eot?#iefix") format("embedded-opentype"), url("/fonts/Locator-Light.otf") format("opentype"), url("/fonts/Locator-Light.woff") format("woff"), url("/fonts/Locator-Light.ttf") format("truetype"), url("/fonts/Locator-Light.svg#Locator-Light") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Locator-Medium';
+    src: url("/fonts/Locator-Medium.eot?#iefix") format("embedded-opentype"), url("/fonts/Locator-Medium.otf") format("opentype"), url("/fonts/Locator-Medium.woff") format("woff"), url("/fonts/Locator-Medium.ttf") format("truetype"), url("/fonts/Locator-Medium.svg#Locator-Medium") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Locator';
+    src: url("/fonts/Locator-Regular.eot?#iefix") format("embedded-opentype"), url("/fonts/Locator-Regular.otf") format("opentype"), url("/fonts/Locator-Regular.woff") format("woff"), url("/fonts/Locator-Regular.ttf") format("truetype"), url("/fonts/Locator-Regular.svg#Locator") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+@font-face {
+    font-family: 'Locator-UltraLight';
+    src: url("/fonts/Locator-UltraLight.eot?#iefix") format("embedded-opentype"), url("/fonts/Locator-UltraLight.otf") format("opentype"), url("/fonts/Locator-UltraLight.woff") format("woff"), url("/fonts/Locator-UltraLight.ttf") format("truetype"), url("/fonts/Locator-UltraLight.svg#Locator-UltraLight") format("svg");
+    font-weight: normal;
+    font-style: normal; }
+
+html,body{
+    height: 100%;
+}
+body {
+    font-family: Locator, sans-serif;
+    background: #fff; }
+
+*, *:before, *:after {
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box; }
+
+h1, h2, h3, h4, h5, h6 {
+    margin: 0; }
+
+h2 {
+    font-family: Locator-Light; }
+
+p, ul {
+    margin: 0;
+    padding: 0; }
+
+ul {
+    list-style: none;
+}
+
+a, a:focus {
+    outline: none; }
+
+.clearfix:before, .clearfix:after {
+    content: '';
+    display: table; }
+
+.clearfix:after {
+    clear: both; }
+
+.wrap {
+    position: relative;
+    width: 90%;
+    margin: 50px auto 150px; }
+.wrap:before, .wrap:after {
+    content: '';
+    display: table; }
+.wrap:after {
+    clear: both; }
+
+
+/* ==========================================================================
+                                 Head
+   ========================================================================== */
+.head {
+    text-align: center; }
+.head .wrap{
+    margin: 0 auto;
+}
+.head .header {
+    background: #125195;
+    -webkit-box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    box-shadow: 0 5px 5px rgba(0, 0, 0, 0.5); }
+.head .header:before, .head .header:after {
+    content: '';
+    display: table; }
+.head .header:after {
+    clear: both; }
+.head h1{
+    color: white;
+    margin: 20px;
+    font-family: Locator-Bold, sans-serif;
+}
+.head .buttons {
+    margin: 20px;
+    position: absolute;
+    left: 0;
+}
+/*======= head: End =======*/
+
+.form-group .text-container{
+    text-align: right;
+}
+
+.captcha{
+    margin-bottom: 10px;
+}
+
+/* ==========================================================================
+                                 table
+   ========================================================================== */
+table.cell-limit td div{
+    max-width: 180px;
+    max-height: 200px;
+    overflow: hidden;
+}
+table td div.more_img{
+    max-width: 200px;
+    width: 5vw;
+}
+table td:nth-child(1){
+    width: 40px;
+}
+table td div ul li{
+    position: relative;
+}
+table td div ul li:before{
+    content: '-';
+    left: 0;
+    display: inline-block;
+}
+table .btn-del{
+    margin-bottom: 5px;
+}
+table .btn-edit{
+    background-color: buttonface;
+    border: 1px solid gray;
+    width: 20px;
+    text-align: center;
+    display: inline-block;
+    border-radius: 1px;
+}
+
+/* ==========================================================================
+                                 add-work
+   ========================================================================== */
+.wrapper{
+    text-align: right;
+}
+
+/* ==========================================================================
+                                 popup
+   ========================================================================== */
+.popup {
+    display: none;
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    text-align: center;
+    z-index: 10; }
+.popup__overlay {
+    background: rgba(0, 0, 0, 0.85);
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0; }
+.popup__before {
+    display: inline-block;
+    height: 100%;
+    vertical-align: middle; }
+.popup__content {
+    position: relative;
+    display: inline-block;
+    vertical-align: middle;
+    padding: 5%;
+    text-align: left;
+    background-color: #f7f7f7;
+    border: 1px solid #000100;
+    -webkit-border-radius: 10px;
+    border-radius: 10px;
+    -webkit-box-shadow: 0 8px 8px rgba(0, 0, 0, 0.41);
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.41); }
+
+/*======= popup: End =======*/
+.alert-success{
+    margin: 20px auto;
+    float: none;
+}
+
+
+/* ==========================================================================
+                                 footer
+   ========================================================================== */
+.footer-block {
+    background: #333;
+    bottom: 0;
+    width: 100%;
+}
+.footer-bottom .footer-block{
+    position: fixed;
+}
+.footer-block .wrap{
+    margin: 0 auto;
+}
+.footer-block .wrap {
+    padding: 30px 0; }
+.footer-block .wrap p {
+    color: white;
+    text-align: left; }
+.footer-block .wrap p a {
+    color: white;
+    text-decoration: none; }
+.footer-block .wrap p a:hover {
+    text-decoration: underline; }
+.footer-block .wrap .trademeta {
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 100%;
+    text-shadow: 0 5px 5px rgba(0, 0, 0, 0.5);
+    vertical-align: middle; }
+.footer-block .wrap .trademeta span {
+    color: white;
+    font-size: 20px;
+    cursor: pointer; }
+.footer-block .wrap .trademeta:before {
+    content: '';
+    height: 100%;
+    display: inline-block;
+    vertical-align: middle; }
+
+/*======= footer: End =======*/
+
